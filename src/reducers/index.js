@@ -11,7 +11,6 @@ const initialMoviesState = {
   showFav: false,
 };
 export function movies(state = initialMoviesState, action) {
-  console.log("movies reducer\n");
   switch (action.type) {
     case ADD_MOVIES:
       return {
@@ -46,7 +45,6 @@ const initialSearchState = {
 };
 
 export function search(state = initialSearchState, action) {
-  console.log("search reducer\n");
   return state;
 }
 
