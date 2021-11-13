@@ -85,6 +85,7 @@ export function search(state = initialSearchState, action) {
 //   };
 // }
 
+// this reducer calls all the other reducers for each and every action
 export default combineReducers({
   movies,
   search,
