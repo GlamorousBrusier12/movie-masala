@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/movie-masala/static/css/main.74aa24cb.chunk.css",
+    "main.js": "/movie-masala/static/js/main.ef86b5e4.chunk.js",
+    "main.js.map": "/movie-masala/static/js/main.ef86b5e4.chunk.js.map",
+    "runtime-main.js": "/movie-masala/static/js/runtime-main.bc008246.js",
+    "runtime-main.js.map": "/movie-masala/static/js/runtime-main.bc008246.js.map",
+    "static/js/2.a79b1dcd.chunk.js": "/movie-masala/static/js/2.a79b1dcd.chunk.js",
+    "static/js/2.a79b1dcd.chunk.js.map": "/movie-masala/static/js/2.a79b1dcd.chunk.js.map",
+    "index.html": "/movie-masala/index.html",
+    "static/css/main.74aa24cb.chunk.css.map": "/movie-masala/static/css/main.74aa24cb.chunk.css.map",
+    "static/js/2.a79b1dcd.chunk.js.LICENSE.txt": "/movie-masala/static/js/2.a79b1dcd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc008246.js",
+    "static/js/2.a79b1dcd.chunk.js",
+    "static/css/main.74aa24cb.chunk.css",
+    "static/js/main.ef86b5e4.chunk.js"
+  ]
+}
