@@ -27,7 +27,7 @@ class Navbar extends Component {
     return (
       <div className="nav">
         <div className="search-container">
-          <input onChange={this.handleChange} />
+          <input onChange={this.handleChange} placeholder="Search" />
           <button id="search-btn" onClick={this.handleSearchClick}>
             Search
           </button>
