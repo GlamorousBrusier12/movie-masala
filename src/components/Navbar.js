@@ -26,6 +26,9 @@ class Navbar extends Component {
     const { result: movies, showSearchResults } = this.props.search;
     return (
       <div className="nav">
+        <div style={{ color: "white" }}>
+          <h1>Movie-Masala</h1>
+        </div>
         <div className="search-container">
           <input onChange={this.handleChange} placeholder="Search" />
           <button id="search-btn" onClick={this.handleSearchClick}>
