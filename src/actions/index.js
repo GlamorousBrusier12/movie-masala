@@ -37,6 +37,21 @@ export function addMovieToList(movie) {
     movie,
   };
 }
+export function searchMovie(imdbId) {
+  // movies with full plot
+  // const url = `https://www.omdbapi.com/?apikey=3ca5df7&i=${imdbId}&plot=full`;
+  const url = `https://www.omdbapi.com/?apikey=3ca5df7&i=${imdbId}`;
+  return function (dispatch) {
+    fetch(url)
+      .then((response) => response.json())
+      .then((movie) => {
+        // console.log(movie);
+
+        // dispatch an action addMovieToList
+        dispatch(addMovieToList(movie));
+      });
+  };
+}
 
 export function addSearchResult(movies) {
   return {

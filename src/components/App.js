@@ -6,7 +6,7 @@ import Moviecard from "./Moviecard";
 import Navbar from "./Navbar";
 class App extends Component {
   componentDidMount() {
-    const { store } = this.props;
+    // const { store } = this.props;
     // store.subscribe(() => {
     //   // never use this foreupate method
     //   this.forceUpdate();

@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { connect } from "react-redux";
-import { addMovieToList, handleMovieSearch } from "../actions";
+import { handleMovieSearch, searchMovie } from "../actions";
 
 class Navbar extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class Navbar extends Component {
     };
   }
   handleAddMovies = (movie) => {
-    this.props.dispatch(addMovieToList(movie));
+    this.props.dispatch(searchMovie(movie.imdbID));
   };
   handleChange = (e) => {
     this.setState({
@@ -22,7 +22,7 @@ class Navbar extends Component {
     this.props.dispatch(handleMovieSearch(searchText));
   };
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     const { result: movies, showSearchResults } = this.props.search;
     return (
       <div className="nav">
@@ -36,7 +36,7 @@ class Navbar extends Component {
               {movies &&
                 movies.map((movie, index) => {
                   return (
-                    <div className="search-result">
+                    <div className="search-result" key={index}>
                       <img src={movie.Poster} alt="search-pic" />
                       <div className="movie-info">
                         <span>{movie.Title}</span>

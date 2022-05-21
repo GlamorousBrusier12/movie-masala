@@ -26,13 +26,13 @@ export function movies(state = initialMoviesState, action) {
       };
     }
     case ADD_FAVOURITE:
-      console.log(`${action.movie.Title} added as a favourite:)`);
+      // console.log(`${action.movie.Title} added as a favourite:)`);
       return {
         ...state,
         favourites: [action.movie, ...state.favourites],
       };
     case REMOVE_FAVOURITE:
-      console.log(`${action.movie.Title} remove added as a favourite:(`);
+      // console.log(`${action.movie.Title} remove added as a favourite:(`);
       const fav = state.favourites.filter((m) => m !== action.movie);
       return {
         ...state,

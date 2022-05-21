@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { connect, Provider } from "react-redux";
+import React from "react";
+import { Provider } from "react-redux";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./components/App";
@@ -40,7 +40,7 @@ const logger =
 
 // it will create a store to the movies and the actions invoked from the store will be handled
 // by the reducers defined in the resp file.
-const store = createStore(rootReducer, applyMiddleware(logger, thunk));
+const store = createStore(rootReducer, applyMiddleware(logger, thunk)); //eslint-disable-line
 
 // export const StoreContext = createContext();
 // console.log(StoreContext);
